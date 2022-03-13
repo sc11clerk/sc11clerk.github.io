@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Private Site for Local Congregation">
+    <meta name="keywords" content="Slatecanyon, slatecanyon 11th, provo stake">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <script type="javascript" src="/js/main.js"></script>
+</head>
+
+<body>
+    <div id="page">
+
+        <h1>Slate Canyon<br />11th Ward</h1>
+
+        <div class="nav">
+            <!-- drop down menu -->
+            <button class="ham dropbtn" onclick="openMenu()"><img id="hambtn" alt="click to open menu"
+                    src="/img/ham.png" style="width: 32px;" /></button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#announcements">Announcements</a>
+                <a href="#links">Zoom links</a>
+                <a href="https://www.churchofjesuschrist.org/?lang=eng" target="_blank">churchofjesuschrist.org</a>
+            </div>
+            <ul id="nav" class="nav-link-list">
+                <li><a href="#announcements">Announcements</a></li>
+                <li><a href="#links">Zoom links</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/?lang=eng" target="_blank">churchofjesuschrist.org</a></li>
+            </ul>
+        </div>
+
+        <section>
+            <div>
+                <div id="announcements">
+                    <h2>Announcements</h2>
+                    <p><strong>Stake Presidency Interview Schedule</strong><br />
+                        For Living Ordinance Recommends or Melchizedek
+                        Priesthood Ordinations, members must contact Dan
+                        Fellars, stake executive secretary, to schedule an
+                        appointment to meet with President Hopkins.<br/>
+                        Interviews for either renewing a temple recommend or
+                        obtaining an ecclesiastical endorsement take place
+                        each Tuesday from 6-7pm at the stake offices. If
+                        schedules do not allow members to come during this
+                        time, or if members are not comfortable with meeting
+                        in-person, please contact Dan Fellars to schedule an
+                        interview.
+                    </p>
+                    <p><strong>To Schedule the Building</strong><br />
+                        Contact Brother Paul Barker at 240-372-1823. Please do not contact the Tongan stake scheduler.
+                    </p>
+                    <p><strong>Tax Forms</strong><br />
+                        Last year's donations are available through your online account. If you need a paper copy,
+                        please let the clerks know.
+                    </p>
+                    <p><strong>Relief Society 180th Birthday Celebration</strong><br />
+                        Thursday, March 17th, 6:30 PM at the Spring Creek (Blue Roof) chapel
+                    </p>
+                </div>
+                <div id="links">
+                    <h2>Zoom Links for Church Attendance</h2>
+                    <p><a target="_blank" href="https://zoom.us/j/91296589427?pwd=ZVI5cStCVWs1KzRwTk1jZkxXalMxUT09">Click here for Sacrament Meeting</a> (10:30 am)</p>
+
+                    <p><a target="_blank" href="https://zoom.us/j/92859742429?pwd=ZkFtQ0RESG5NVk4zbmthWUlsMWNmdz09">Click here for Gospel Doctrine</a> (1st and 3rd Sunday at 11:40 am)</p>
+
+                    <!--
+                    <p><a target="_blank" href="https://us04web.zoom.us/j/77058587941?pwd=bGp5VUZ1cVczWXU4bTJFbHducWUvZz09">Click here for Temple Prep Sunday School</a></p>
+                    -->
+
+                    <p><a target="_blank" href="https://zoom.us/j/98910876201?pwd=NEVVdEZFVXRvTnNrVktPQ0JPalJndz09">Click here for Primary sharing time</a> (11:40 am)</p>
+                    
+                    <p><a target="_blank" href="https://byu.zoom.us/j/97707177616?pwd=bHRTYnJ4T2RRNFU1TUF2cnl0Y254QT09">Click here for Relief Society</a>. (2nd and 4th Sunday at 11:40 am)<br />
+You can also join by phone: 1-346-248-7799 (meeting ID 977 0717 7616).</p>
+                    
+                    <p><a target="_blank" href="https://us02web.zoom.us/j/89942912542?pwd=SERCaHFZMUFuYy9mbTFDQmlXamdVQT09">Click here for Elder's Quorum</a> (2nd and 4th Sunday at 11:40 am)</p>
+                    
+                    <p><a target="_blank" href="https://byu.zoom.us/j/95743042695?pwd=N2FHRys0MzRiNWxuUWNGbWtDMllndz09">Click here for Young Womens</a> (2nd and 4th Sunday at 11:40 am)</p>
+
+                    <p><a target="_blank" href="https://rmuohp.zoom.us/j/9962423155?pwd=OUtOcmhUdU45U1BESnpPYjBmVkZNQT09">Click here for Young Mens</a> (2nd and 4th Sunday at 11:40 am)</p>
+                    
+                    <p><a target="_blank" href="https://zoom.us/j/91296589427?pwd=ZVI5cStCVWs1KzRwTk1jZkxXalMxUT09">Click here for 5th Sunday for both youth and adults</a> (11:40 am)</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="footer">
+        <div class="footer-content">
+            <p style="line-height: 20px;">Slatecanyon 11th Ward, Provo Utah Stake<br/>
+                The Church of Jesus Christ of Latter Day Saints</p>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        function openMenu() {
+            console.log(1);
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.matches('#hambtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+</body>
+
+</html>

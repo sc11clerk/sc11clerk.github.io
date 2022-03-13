@@ -44,7 +44,7 @@ p {
 
 /* navigation */
 .nav {
-    background: url(/img/logo.png);
+    background: url(img/logo.png);
     background-repeat: no-repeat;
     background-size: 74px;
     top: 0;
